@@ -33,7 +33,16 @@ A web application that calculates your day of birth and assigns you a traditiona
 2. Select your gender (Male or Female)
 3. Click "Get Akan Name"
 4. View your Akan name and day of birth
+## BDD (Behavior-Driven Development)
+### Scenario 1: Date Validation
+**Given** user enters invalid date  
+**When** they submit form  
+**Then** show appropriate error message
 
+### Scenario 2: Name Calculation  
+**Given** valid date and gender  
+**When** form submitted  
+**Then** display correct Akan name
 ## Akan Names Reference Table
 | Day of Week | Male Name | Female Name |
 |-------------|-----------|-------------|
