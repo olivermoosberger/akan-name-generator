@@ -1,9 +1,22 @@
 # Akan Name Generator
-
+## project description
 A web application that calculates your day of birth and assigns you a traditional Ghanaian Akan name based on your gender.
+
 
 ## Live Demo
 🌐 **[View Live Site](https://olivermoosberger.github.io/akan-name-generator/)**
+
+## Author Information
+**Oliver Moosberger**  
+- Student ID: [Your Student ID]  
+- Course: [Your Course Name]  
+- Email: [Your Email]  
+
+## Setup Instructions
+### Local Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/olivermoosberger/akan-name-generator.git
 
 ## Features
 - 📅 **Date Validation**: Checks if entered date is valid
