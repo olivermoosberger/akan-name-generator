@@ -8,9 +8,9 @@ A web application that calculates your day of birth and assigns you a traditiona
 
 ## Author Information
 **Oliver Moosberger**  
-- Student ID: [Your Student ID]  
-- Course: [Your Course Name]  
-- Email: [Your Email]  
+- Student ID: oliver moosberger  
+- Course: software development  
+- Email: oliver.moosberger@student.moringaschool.com
 
 ## Setup Instructions
 ### Local Setup
