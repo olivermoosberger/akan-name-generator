@@ -44,6 +44,17 @@ A web application that calculates your day of birth and assigns you a traditiona
 **When** form submitted  
 **Then** display correct Akan name
 ## Akan Names Reference Table
+## Technologies Used
+- **HTML5**: For semantic structure and forms
+- **CSS3**: For styling, layout, and responsive design
+- **JavaScript (ES6+)**: For logic, calculations, and interactivity
+- **Git**: For version control
+- **GitHub Pages**: For free hosting and deployment
+
+## Contact Information
+**Oliver Moosberger**  
+- **Email:** [your.email@example.com]  
+- **GitHub:** [https://github.com/olivermoosberger](https://github.com/olivermoosberger)
 | Day of Week | Male Name | Female Name |
 |-------------|-----------|-------------|
 | Sunday      | Kwasi     | Akosua      |
