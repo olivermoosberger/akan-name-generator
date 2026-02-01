@@ -27,6 +27,18 @@ A web application that calculates your day of birth and assigns you a traditiona
 **Given** valid date and gender  
 **When** form submitted  
 **Then** display correct Akan name
+## Technologies Used
+- **HTML5**: For semantic structure and forms
+- **CSS3**: For styling, layout, and responsive design
+- **JavaScript (ES6+)**: For logic, calculations, and interactivity
+- **Git**: For version control
+- **GitHub Pages**: For free hosting and deployment
+
+## Contact Information
+**Oliver Moosberger**  
+- **Email:** [your.email@example.com]  
+- **GitHub:** [https://github.com/olivermoosberger](https://github.com/olivermoosberger)  
+
 ## Features
 - 📅 **Date Validation**: Checks if entered date is valid
 - 🔢 **Day Calculation**: Calculates day of week from birth date
