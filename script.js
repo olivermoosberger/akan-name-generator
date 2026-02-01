@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
         displayResult(akanName, dayName, gender);
     });
     
-    // Display result (CLEAN VERSION)
+    // Display result (CLEAN VERSION - NO DEBUG INFO)
     function displayResult(akanName, dayName, gender) {
         resultContainer.innerHTML = `
             <h2>Your Akan Name is: <span class="highlight">${akanName}</span></h2>
