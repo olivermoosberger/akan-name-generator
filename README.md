@@ -17,7 +17,16 @@ A web application that calculates your day of birth and assigns you a traditiona
 1. Clone the repository:
    ```bash
    git clone https://github.com/olivermoosberger/akan-name-generator.git
+## BDD (Behavior-Driven Development)
+### Scenario 1: Date Validation
+**Given** user enters invalid date  
+**When** they submit form  
+**Then** show appropriate error message
 
+### Scenario 2: Name Calculation  
+**Given** valid date and gender  
+**When** form submitted  
+**Then** display correct Akan name
 ## Features
 - 📅 **Date Validation**: Checks if entered date is valid
 - 🔢 **Day Calculation**: Calculates day of week from birth date
