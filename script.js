@@ -13,28 +13,23 @@ document.addEventListener('DOMContentLoaded', function() {
         // INSTRUCTOR'S EXACT FORMULA:
         // d = ((CC/4 - 2×CC - 1) + (5×YY/4) + (26×(MM + 1)/10) + DD) mod 7
         
-        // Step 1: Extract CC (century) and YY (year in century)
-        let CC = Math.floor(year / 100);  // First two digits
-        let YY = year % 100;              // Last two digits
+        // Extract CC and YY
+        let CC = Math.floor(year / 100);
+        let YY = year % 100;
         
-        // Step 2: Calculate each part with integer division
+        // Calculate parts
         let part1 = Math.floor(CC / 4) - (2 * CC) - 1;
         let part2 = Math.floor((5 * YY) / 4);
         let part3 = Math.floor((26 * (month + 1)) / 10);
         
-        // Step 3: Combine parts and add the day
+        // Combine and apply modulus
         let d = part1 + part2 + part3 + day;
-        
-        // Step 4: Apply modulus 7
         d = d % 7;
         
-        // Step 5: Ensure result is positive (0-6)
-        if (d < 0) {
-            d += 7;
-        }
+        // Ensure positive
+        if (d < 0) d += 7;
         
-        // d = 0 → Sunday, 1 → Monday, 2 → Tuesday, ..., 6 → Saturday
-        return d;
+        return d;  // 0=Sunday, 1=Monday, etc.
     }
     
     // Input validation
@@ -43,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (month < 1 || month > 12) return "Month must be between 1 and 12";
         if (year < 1900 || year > 2100) return "Year must be between 1900 and 2100";
         
-        // Check if date is valid
         const date = new Date(year, month - 1, day);
         if (date.getDate() !== day || date.getMonth() !== month - 1) {
             return "Invalid date";
@@ -52,17 +46,15 @@ document.addEventListener('DOMContentLoaded', function() {
         return null;
     }
     
-    // Form submission handler
+    // Form submission
     form.addEventListener('submit', function(event) {
         event.preventDefault();
         
-        // Get user input
         const day = parseInt(document.getElementById('day').value);
         const month = parseInt(document.getElementById('month').value);
         const year = parseInt(document.getElementById('year').value);
         const gender = document.querySelector('input[name="gender"]:checked')?.value;
         
-        // Validate
         if (!gender) {
             alert("Please select your gender.");
             return;
@@ -74,14 +66,10 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
-        // Calculate day
         const dayIndex = calculateDayOfWeek(day, month, year);
         const dayName = daysOfWeek[dayIndex];
+        const akanName = gender === 'male' ? maleNames[dayIndex] : femaleNames[dayIndex];
         
-        // Get Akan name
-        let akanName = gender === 'male' ? maleNames[dayIndex] : femaleNames[dayIndex];
-        
-        // Display result
         displayResult(akanName, dayName, gender);
     });
     
